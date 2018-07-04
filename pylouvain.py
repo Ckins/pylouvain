@@ -140,7 +140,7 @@ class PyLouvain:
         q = 0
         m2 = self.m * 2
         for i in range(len(partition)):
-            q += self.s_in[i] / m2 - (self.s_tot[i] / m2) ** 2
+            q += (0.0 + self.s_in[i]) / m2 - ((self.s_tot[i] + 0.0) / m2) ** 2
         return q
 
     '''
